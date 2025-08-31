@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #343a40;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .intro {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      max-width: 1000px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+    .intro img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin-right: 25px;
+      border: 5px solid #007bff;
+      object-fit: cover;
+    }
+    .intro p {
+      flex: 1;
+      line-height: 1.6;
+    }
+    .contact-section {
+      text-align: center;
+      padding: 40px 20px;
+      background: #fff;
+      margin: 30px auto;
+      border-radius: 12px;
+      max-width: 1000px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+    .logos {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+    .logos img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid #007bff;
+      transition: 0.3s;
+    }
+    .logos img:hover {
+      transform: scale(1.1);
+    }
+    /* Contact Form */
+ .contact-form {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.contact-form h2 {
+  text-align: center;
+  color: #5a4ff2;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #5a4ff2;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-weight: bold;
+  font-size: 16px;
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Align radio & checkboxes properly */
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+}
+
+.options label {
+  font-size: 15px;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 12px;
+  background: #5a4ff2;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-submit:hover {
+  background: #4834d4;
+}
+label {
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+
+
+
+  </style>
+</head>
+<body>
+  <header>My Portfolio</header>
+
+  <!-- Intro Section -->
+  <div class="intro">
+    <img src="1725032261823.jpeg" alt="Profile">
+    <p>
+      Hello! My name is Mayur Rathod, and I am currently pursuing a B.Tech degree at JSPM RSCOE. 
+      I am passionate about academics, cricket, chess, and extracurricular activities. 
+      Balancing academics with sports and hobbies has shaped me into a well-rounded individual 
+      with strong time management skills. Currently, I am seeking opportunities to further develop 
+      my abilities and make meaningful contributions to the tech industry.
+    </p>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="contact-section">
+    <h2>Contact & Socials</h2>
+    <p>Email: rathodmayur11109@gmail.com | Phone: 9209283476</p>
+    <div class="logos">
+      <img src="Education-Logo-Graphics-1-10.jpg" alt="Academic" onclick="location.href='score.html'">
+      <img src="https://static.vecteezy.com/system/resources/previews/023/986/970/non_2x/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.png" alt="LinkedIn"  onclick="location.href='https://www.linkedin.com/in/mayur-rathod-66b6172a1/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'">
+    </div>
+  </div>
+
+  <!-- Contact Form -->
+  <div class="contact-form">
+  <h2>Contact Company</h2>
+  <form>
+    <!-- Name -->
+    <input type="text" placeholder="Your Name" required>
+    
+    <!-- Email -->
+    <input type="email" placeholder="Your Email" required>
+    
+    
+
+    <!-- Work Type -->
+<label for="worktype"><b>Work Type</b></label><br>
+<input type="text" id="worktype" name="worktype" placeholder="Online / Offline"><br><br>
+
+<!-- Skills Required -->
+<label for="skills"><b>Skills Required</b></label><br>
+<input type="text" id="skills" name="skills" placeholder="e.g. DSA, Frontend, Backend, Full Stack"><br><br>
+
+
+    <!-- Message -->
+    <textarea placeholder="Your Message" rows="5" required></textarea>
+
+    <!-- Submit -->
+    <button type="submit" class="btn-submit">Send Message</button>
+  </form>
+</div>
+
+
+</body>
+</html>

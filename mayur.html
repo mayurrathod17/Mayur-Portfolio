@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    /* ---------- Base Styles ---------- */
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #e0eafc, #cfdef3);
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      font-size: 32px;
+      font-weight: bold;
+      color: #222;
+      background: #fff;
+      border-radius: 12px;
+      margin: 20px auto;
+      width: fit-content;
+      padding: 15px 40px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+
+    /* ---------- Grid Layout ---------- */
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      padding: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* ---------- Cards ---------- */
+    .card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 16px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+    }
+
+    .card h3 {
+      background: #f9f9f9;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      text-align: center;
+      color: #444;
+    }
+
+    .card ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .card ul li {
+      margin: 8px 0;
+      font-size: 15px;
+      position: relative;
+      padding-left: 18px;
+    }
+
+    .card ul li::before {
+      content: "•";
+      color: #007bff;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+    }
+
+    /* ---------- Profile Pic ---------- */
+    .profile-pic {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 6px solid #007bff;
+      box-shadow: 0 0 20px rgba(0,123,255,0.5);
+      transition: 0.4s;
+    }
+
+    .profile-pic:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 35px rgba(0,123,255,0.7);
+    }
+
+    /* ---------- Buttons ---------- */
+    .buttons {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .btn {
+      padding: 12px 30px;
+      font-size: 18px;
+      font-weight: 600;
+      border: none;
+      border-radius: 30px;
+      margin: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn-check {
+      background: linear-gradient(135deg, #28a745, #218838);
+      color: white;
+      box-shadow: 0 5px 15px rgba(40,167,69,0.4);
+    }
+
+    .btn-check:hover {
+      transform: translateY(-4px) scale(1.05);
+      box-shadow: 0 8px 20px rgba(40,167,69,0.6);
+    }
+
+    .btn-ignore {
+      background: linear-gradient(135deg, #dc3545, #c82333);
+      color: white;
+      box-shadow: 0 5px 15px rgba(220,53,69,0.4);
+    }
+
+    .btn-ignore:hover {
+      transform: translateY(-4px) scale(1.05);
+      box-shadow: 0 8px 20px rgba(220,53,69,0.6);
+    }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 768px) {
+      header {
+        font-size: 24px;
+        padding: 10px 25px;
+      }
+      .profile-pic {
+        width: 140px;
+        height: 140px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>My Portfolio</header>
+
+  <div class="container">
+    <!-- Profile -->
+    <div class="card" style="text-align:center;">
+      <img src= "1725032261823.jpeg" alt="Profile Picture" class="profile-pic">
+      <h3>About Me</h3>
+      <p>Hello! I am Mayur Rathod, a passionate full-stack developer who loves building modern web apps.</p>
+    </div>
+
+    <!-- Fullstack Skills -->
+    <div class="card">
+      <h3>Fullstack Skills</h3>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Express.js</li>
+      </ul>
+    </div>
+
+    <!-- Languages -->
+    <div class="card">
+      <h3>Languages</h3>
+      <ul>
+        <li>C++</li>
+        <li>C</li>
+        <li>Python</li>
+        <li>DSA in C++</li>
+      </ul>
+    </div>
+
+    <!-- Extra Skills -->
+    <div class="card">
+      <h3>Extra Skills</h3>
+      <ul>
+        <li>Communication (English, Marathi, Hindi)</li>
+        <li>AI</li>
+        <li>Team Management</li>
+        <li>Problem Solving</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Buttons -->
+  <div class="buttons">
+        <button class="btn btn-check" onclick="location.href='index.html'">✔ Check</button>
+
+    <button class="btn btn-ignore" onclick="location.href='thnx.html'">✖ Ignore</button>
+  </div>
+
+</body>
+</html>
